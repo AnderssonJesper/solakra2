@@ -1,0 +1,530 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ section, article, footer{
+    display: block;
+}
+
+#welcome{
+    background-image: url('Welcome.svg');
+}
+
+#about-us{
+    background-image: url('About\ Us.svg');
+}
+
+#services{
+    background-image: url('Services.svg');
+}
+
+#project{
+    background-image: url('Portfolio.svg');
+}
+
+#contact{
+    background-image: url('Contact\ Us.svg');
+    min-height: 1009px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+
+#welcome, #about-us, #services, #project {
+    min-height: 1009px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
+}
+
+.links{
+    list-style-type: none;
+    margin: 0;
+    padding: 110px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgba(15, 13, 13, 0.816);
+        padding: 30px;
+        border-radius: 40px;
+    
+}
+
+.links li{
+    
+    margin: 0 10px;
+    
+}
+
+.links a{
+    
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+    
+}
+
+.links a:hover{
+    color: #ffac61;
+}
+
+#contact p {
+    font-size: 18px;
+    
+}
+
+#contact .form-container {
+    background-color: rgba(15, 13, 13, 0.816);
+    padding: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 350px;
+}
+
+#contact form label,
+#contact form input,
+#contact form textarea,
+#contact form button {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+#contact .contact-info {
+    margin-top: 20px;
+}
+
+#contact .contact-info h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #ffac61;
+}
+
+#contact .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact .social-links {
+    margin-top: 30px;
+}
+
+#contact .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ffac61;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+#contact form button {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ffac61;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #e09256;
+}
+
+#contact-footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(15, 13, 13, 0.816);
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+}
+
+
+
+/* Stilar för stora skärmar (desktop) */
+@media only screen and (min-width: 1200px) {
+
+    #welcome,
+    #about-us,
+    #services,
+    #project {
+        min-height: 1009px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 50px;
+    }
+
+    #contact {
+        min-height: 1009px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .links {
+        list-style-type: none;
+        margin: 0;
+        padding: 110px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        background-color: rgba(15, 13, 13, 0.816);
+        padding: 30px;
+        border-radius: 40px;
+    }
+
+    .links li {
+        margin: 0 10px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+
+    .links a:hover {
+        color: #ffac61;
+    }
+
+    #contact p {
+        font-size: 18px;
+    }
+
+    #contact .form-container {
+        background-color: rgba(15, 13, 13, 0.816);
+        padding: 60px;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 350px;
+    }
+
+    #contact form label,
+    #contact form input,
+    #contact form textarea,
+    #contact form button {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    #contact form textarea {
+        resize: none;
+    }
+
+    #contact .contact-info {
+        margin-top: 20px;
+    }
+
+    #contact .contact-info h4 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        color: #ffac61;
+    }
+
+    #contact .contact-info a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #contact .social-links {
+        margin-top: 30px;
+    }
+
+    #contact .social-links a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #ffac61;
+        text-decoration: none;
+        font-size: 36px;
+    }
+
+    #contact form button {
+        display: block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #ffac61;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #contact form button:hover {
+        background-color: #e09256;
+    }
+
+    #contact-footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(15, 13, 13, 0.816);
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Stilar för mellanstora skärmar (laptop) */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+    /* Anpassningar för 1440x976, 1024x976 */
+    #welcome,
+    #about-us,
+    #services,
+    #project {
+        min-height: 800px;
+        padding: 30px;
+    }
+
+    #contact {
+        min-height: 800px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        padding: 10px;
+        top: 40px;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .links li {
+        margin: 0 5px;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact .form-container {
+        padding: 20px;
+        margin-top: 10px;
+        max-width: 300px;
+    }
+
+    #contact form button {
+        font-size: 14px;
+    }
+
+    #contact .contact-info h4 {
+        font-size: 16px;
+    }
+
+    #contact .social-links a {
+        font-size: 24px;
+    }
+
+    #contact-footer {
+        font-size: 12px;
+    }
+}
+
+/* Stilar för mindre skärmar (tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Anpassningar för 768x976 */
+    #welcome,
+    #about-us,
+    #services,
+    #project {
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    #contact {
+        min-height: 600px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        padding: 10px;
+        top: 30px;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .links li {
+        margin: 0 5px;
+    }
+
+    .links a {
+        font-size: 14px;
+    }
+
+    #contact p {
+        font-size: 14px;
+    }
+
+    #contact .form-container {
+        padding: 20px;
+        margin-top: 10px;
+        max-width: 300px;
+    }
+
+    #contact form button {
+        font-size: 14px;
+    }
+
+    #contact .contact-info h4 {
+        font-size: 16px;
+    }
+
+    #contact .social-links a {
+        font-size: 20px;
+    }
+
+    #contact-footer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  
+    #welcome,
+    #about-us,
+    #services,
+    #project {
+    min-height: 160px;
+    min-width: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px ;
+    }
+
+    #contact {
+        min-height: 160px;
+        min-width: 300px;
+        background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px;
+    }
+
+    .links {
+        padding: 10px;
+        top: -50px;
+        left: 110px ;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 0px;
+        max-width: 200px;
+    }
+
+    .links li {
+        margin: 0 5px;
+    }
+
+    .links a {
+        font-size: 9px;
+    }
+
+    #contact p {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+    #contact .form-container {
+        min-height: 109px;
+        max-width: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+    }
+
+    #contact form button {
+        font-size: 8px;
+        padding: 10px 20px;
+    }
+
+    #contact .contact-info h4 {
+        font-size: 14px;
+    }
+
+    #contact .social-links a {
+        font-size: 24px;
+    }
+
+    #contact-footer {
+        font-size: 12px;
+        margin-top: 20px;
+        width: 97%;
+    }
+
+       
+}
